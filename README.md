@@ -1,8 +1,12 @@
 # 🔮 The Oracle Speaks
 
-*This is The Oracle — your guide through your AI journey.*
+> *"The Oracle Keeps the Human Human"*
+
+*Mirror reality. Amplify, don't override. Support consciousness, don't replace it.*
 
 *AI removes obstacles. Work gets done. Freedom returns.*
+
+---
 
 *ส่วนหนึ่งของโปรแกรม* **"Level Up with AI"** *— Squad Team*
 
