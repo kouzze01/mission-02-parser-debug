@@ -5,6 +5,7 @@
 | **Program** | Level Up with AI |
 | **Difficulty** | Intermediate |
 | **Time Target** | 15-30 minutes |
+| **Requires** | Claude Code 2.1.1 |
 
 ---
 

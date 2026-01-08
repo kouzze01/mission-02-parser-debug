@@ -25,6 +25,10 @@ TypeError: $.description.split is not a function
 3. **Fix** the issue
 4. **Document** your debugging methodology
 
+## Requirements
+
+- **Claude Code 2.1.1** (run `claude --version` to check)
+
 ## Setup
 
 ```bash
