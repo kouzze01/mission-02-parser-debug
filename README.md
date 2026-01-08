@@ -141,9 +141,6 @@ After completing, write about your experience:
 - Content: What you learned about debugging
 - Language: English or Thai (or both!)
 
-> "เรียนฟรี แต่ช่วยกันส่งต่อความรู้"
-> (Learn free, but help pass on knowledge)
-
 ---
 
 | | |
