@@ -1,8 +1,6 @@
 # 🔮 The Oracle Speaks
 
-> *This is The Oracle - your guide through the debugging journey.*
->
-> *"เมื่อ Claude Code พัง คุณต้องหาให้เจอ"*
+> *This is The Oracle - your guide through your AI journey.*
 
 **ส่วนหนึ่งของโปรแกรม "Level Up with AI" - Squad Team**
 
@@ -11,29 +9,33 @@
 
 ---
 
-## 💥 The Crash
+# MISSION-02: Parser Bug Hunt
+
+## 💥 The Problem
 
 ```
 TypeError: $.description.split is not a function
 ```
 
-You updated Claude Code and now it crashes when you type `/`.
+You updated Claude Code and now it **crashes** when you type `/`.
 
-**ทุกครั้งที่พิมพ์ `/` มันพัง!**
+ทุกครั้งที่พิมพ์ `/` มันพัง!
 
 ---
 
-## 👋 ยินดีต้อนรับ Squad Team!
+## 🎯 Your Mission
 
-นี่คือ **Challenge ที่สอง** - หาไฟล์ที่พังแล้วแก้มัน!
-
-ใช้ systematic debugging ไม่ใช่เดาสุ่ม 🔍
+| Step | Task |
+|------|------|
+| 1 | **Reproduce** the crash |
+| 2 | **Find** the 6 broken files |
+| 3 | **Fix** them |
+| 4 | **Document** your methodology |
 
 ---
 
 | | |
 |---|---|
-| **Program** | Level Up with AI |
 | **Difficulty** | Intermediate |
 | **Time Target** | 15-30 min |
 | **Requires** | Claude Code 2.1.1 |
@@ -57,18 +59,7 @@ cp -r challenge-commands/* ~/.claude/commands/
 
 ---
 
-## Your Mission
-
-| Step | Task |
-|------|------|
-| 1 | **Reproduce** the crash |
-| 2 | **Find** the 6 broken files |
-| 3 | **Fix** them |
-| 4 | **Document** your methodology |
-
----
-
-## Challenge Structure
+## 📁 Challenge Files
 
 ```
 challenge-skills/     (8 files)
@@ -79,7 +70,7 @@ challenge-commands/   (4 files)
 
 ---
 
-## Rules
+## 📏 Rules
 
 1. You may NOT read this README after starting
 2. Use systematic debugging (not random guessing)
@@ -102,22 +93,24 @@ challenge-commands/   (4 files)
 Create a **Pull Request** to this repo with:
 
 1. Your fixes to the 6 broken files
-2. A `SOLUTION.md` file containing:
-   - Which 6 files were broken
-   - What was wrong (root cause)
-   - Your debugging steps (with timestamps)
-   - Time to solve
+2. A `SOLUTION.md` file with your methodology
 
 ```bash
-# Fork → Clone → Fix → PR
 gh repo fork Soul-Brews-Studio/mission-02-parser-debug
-# Fix the 6 broken files
-# Create SOLUTION.md with your methodology
-git add -A && git commit -m "fix: solved parser bug challenge"
-gh pr create --title "MISSION-02 Submission: [Your Name]"
+# Fix the 6 broken files + create SOLUTION.md
+gh pr create --title "MISSION-02: [Your Name]"
 ```
 
 **Scoring**: Oracle will grade your PR (100 points max)
+
+---
+
+## 📝 Blog Requirement
+
+After completing, write about your experience:
+
+- Platform: [Medium Soul Brews Studio Hub](https://medium.com/soul-brews-studio-hub)
+- Content: What you learned about debugging
 
 ---
 
@@ -133,28 +126,12 @@ gh pr create --title "MISSION-02 Submission: [Your Name]"
 
 ---
 
-## 📝 Blog Requirement
-
-After completing, write about your experience:
-
-- Platform: [Medium Soul Brews Studio Hub](https://medium.com/soul-brews-studio-hub)
-- Content: What you learned about debugging
-- Language: English or Thai (or both!)
-
----
-
 | | |
 |---|---|
 | **Created by** | Soul Brews Studio |
-| **Program** | Level Up with AI |
-| **Bug source** | Real production bug (2026-01-08) |
+| **Bug source** | Real production bug (2026-01-08 08:34 GMT+7) |
 | **Related** | [MISSION-01: Voice Integration](https://github.com/Soul-Brews-Studio/oracle-voice-tray/issues/1) |
 
 ---
 
 *🔮 The Oracle remembers every journey. Share yours.*
-
-*ส่วนหนึ่งของโปรแกรม "Level Up with AI" - Squad Team*
-
-> *"เรียนฟรี แต่ช่วยกันส่งต่อความรู้"*
-> *(Learn free, but help pass on knowledge)*
