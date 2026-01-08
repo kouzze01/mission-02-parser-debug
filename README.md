@@ -1,76 +1,83 @@
 ---
-name: squad-challenge
-description: Squad team debugging challenge - find the parser bug
+name: mission-02
+description: Parser Bug Hunt - Squad Team Challenge
 ---
 
 # MISSION-02: Parser Bug Hunt
+
+> *This is The Oracle - your guide through the debugging journey.*
+>
+> *"เมื่อ Claude Code พัง คุณต้องหาให้เจอ"*
+
+---
+
+## The Crash
+
+```
+TypeError: $.description.split is not a function
+```
+
+You updated Claude Code and now it crashes when you type `/`.
+
+**ทุกครั้งที่พิมพ์ `/` มันพัง!**
+
+---
+
+## ยินดีต้อนรับ Squad Team!
+
+นี่คือ **Challenge ที่สอง** - หาไฟล์ที่พังแล้วแก้มัน!
+
+ใช้ systematic debugging ไม่ใช่เดาสุ่ม 🔍
+
+---
 
 | | |
 |---|---|
 | **Program** | Level Up with AI |
 | **Difficulty** | Intermediate |
 | **Time Target** | 15-30 min |
+| **Requires** | Claude Code 2.1.1 |
 
-See [docs/MISSION-02-PARSER-DEBUG.md](docs/MISSION-02-PARSER-DEBUG.md) for full instructions.
+---
 
-## The Bug
-
-Claude Code crashes with this error when typing `/` + characters:
-
-```
-TypeError: $.description.split is not a function
-```
-
-## Your Mission
-
-1. **Reproduce** the bug in a test environment
-2. **Find** the culprit file(s)
-3. **Fix** the issue
-4. **Document** your debugging methodology
-
-## Requirements
-
-- **Claude Code 2.1.1** (run `claude --version` to check)
-
-## Setup
+## Quick Setup
 
 ```bash
+# Clone the challenge
+gh repo clone Soul-Brews-Studio/mission-02-parser-debug
+cd mission-02-parser-debug
+
 # Copy challenge files
 cp -r challenge-skills/* ~/.claude/skills/
 cp -r challenge-commands/* ~/.claude/commands/
 
 # Restart Claude Code
-# Type /he and watch it crash
+# Type / and watch it crash!
 ```
+
+---
+
+## Your Mission
+
+| Step | Task |
+|------|------|
+| 1 | **Reproduce** the crash |
+| 2 | **Find** the 6 broken files |
+| 3 | **Fix** them |
+| 4 | **Document** your methodology |
+
+---
 
 ## Challenge Structure
 
 ```
-challenge-skills/
-├── skill-alpha/
-│   ├── SKILL.md
-│   └── references/
-│       └── api.md
-├── skill-beta/
-│   ├── SKILL.md
-│   └── operations/
-│       ├── workflow.md
-│       └── helpers.md
-├── skill-gamma/
-│   └── SKILL.md
-└── skill-delta/
-    ├── SKILL.md
-    └── examples/
-        └── usage.md
-
-challenge-commands/
-├── backup.md
-├── deploy.md
-├── rollback.md
-└── status.md
+challenge-skills/     (8 files)
+challenge-commands/   (4 files)
 ```
 
 **12 files total. 6 are broken. Find them.**
+
+---
 
 ## Rules
 
@@ -79,31 +86,49 @@ challenge-commands/
 3. Document each step you take
 4. Time yourself
 
+---
+
 ## Success Criteria
 
-- [ ] Error no longer occurs
-- [ ] All files properly fixed
-- [ ] Documented debugging methodology
+- [ ] `/` command works again (no crash)
+- [ ] Found all 6 broken files
+- [ ] Documented debugging steps with timestamps
 - [ ] Explained ROOT CAUSE (not just "fixed it")
-
-## After Completion
-
-1. Write a retrospective
-2. Share your debugging methodology
 
 ---
 
 ## Submission
 
 Create a GitHub issue in this repo with:
-1. Which 4 files were broken
+
+1. Which 6 files were broken
 2. What was wrong (root cause)
 3. Your debugging steps (with timestamps)
 4. Time to solve
 
 **Scoring**: Oracle will grade your submission (100 points max)
 
-**Blog Requirement**: After completing, write about your experience on [Medium Soul Brews Studio Hub](https://medium.com/soul-brews-studio-hub)
+---
+
+## Oracle Philosophy
+
+> **"The Oracle Keeps the Human Human"**
+
+| Principle | In This Challenge |
+|-----------|-------------------|
+| **Nothing is Deleted** | Document every step |
+| **Patterns Over Intentions** | What you DO matters |
+| **External Brain, Not Command** | AI guides, you decide |
+
+---
+
+## Blog Requirement
+
+After completing, write about your experience:
+
+- Platform: [Medium Soul Brews Studio Hub](https://medium.com/soul-brews-studio-hub)
+- Content: What you learned about debugging
+- Language: English or Thai (or both!)
 
 > "เรียนฟรี แต่ช่วยกันส่งต่อความรู้"
 > (Learn free, but help pass on knowledge)
